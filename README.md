@@ -20,8 +20,8 @@ To get the docker : docker pull briffou/texlive
 # Usage 
 ## Outside the container
 ```
-docker run --rm -it -v $(pwd):/data briffou/texlive pdflatex file.tex
-docker run --rm -it -v $(pwd):/data briffou/texlive latexmk file.tex
+docker run --rm -v $(pwd):/data briffou/texlive pdflatex file.tex
+docker run --rm -v $(pwd):/data briffou/texlive latexmk file.tex
 ```
 
 ## Inside 
