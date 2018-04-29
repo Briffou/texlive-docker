@@ -1,8 +1,8 @@
 # Docker for Tex Live
-# current version : Tex Live 2017
+# current version : Tex Live 2018
 FROM phusion/baseimage
 
-LABEL version="19 january 2018"
+LABEL version="29 April 2018"
 
 RUN apt-get update && apt-get install -y ghostscript xz-utils wget bsdtar perl && \
     apt-get clean
