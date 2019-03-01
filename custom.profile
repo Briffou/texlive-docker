@@ -38,4 +38,5 @@ collection-latexextra 1
 collection-mathscience 1
 collection-plaingeneric 1
 collection-publishers 1
+collection-luatex 1
 collection-xetex 1
