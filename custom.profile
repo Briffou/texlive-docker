@@ -5,8 +5,8 @@ TEXMFCONFIG ~/.texlive-latest/texmf-config
 TEXMFHOME ~/texmf
 TEXMFLOCAL /usr/local/texlive/texmf-local
 TEXMFSYSCONFIG /usr/local/texlive/latest/texmf-config
-TEXMFSYSVAR /usr/local/texlive/latest/texmf-var
-TEXMFVAR /tmp/texmf-var
+TEXMFSYSVAR /tmp/texmf-var
+TEXMFVAR  ~/.texlive-latest/texmf-var
 binary_x86_64-linux 1
 instopt_adjustpath 0
 instopt_adjustrepo 1

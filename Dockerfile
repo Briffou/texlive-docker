@@ -2,13 +2,14 @@
 # current version : Tex Live 2018
 FROM phusion/baseimage
 
-LABEL version="28 February 2019"
+LABEL version="1 Mars 2019"
 
 RUN apt-get update && apt-get install -y ghostscript xz-utils wget bsdtar perl && \
     apt-get clean
 
 WORKDIR /home/install-tl-unx
 
+ARG TEXMFSYSVAR=/tmp/texmf-var/
 ADD custom.profile .
 
 RUN wget -nv -O install-tl-unx.tar.gz http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
@@ -21,6 +22,8 @@ RUN wget -nv -O install-tl-unx.tar.gz http://mirror.ctan.org/systems/texlive/tln
 WORKDIR /data
 
 ENV PATH $PATH:/usr/local/texlive/latest/bin/x86_64-linux
+
+RUN luaotfload-tool --update && chmod -R 777 $TEXMFSYSVAR
 
 CMD ["/bin/bash"]    
     
