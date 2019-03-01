@@ -2,7 +2,7 @@
 # current version : Tex Live 2018
 FROM phusion/baseimage
 
-LABEL version="2 December 2018"
+LABEL version="28 February 2019"
 
 RUN apt-get update && apt-get install -y ghostscript xz-utils wget bsdtar perl && \
     apt-get clean
