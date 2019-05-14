@@ -1,5 +1,5 @@
 # About 
-Docker for Tex Live (based on phusion/baseimage). Currently Tex Live 2018. This Dockerfile download and install the latest Tex Live archive available
+Docker for Tex Live (based on phusion/baseimage). Currently Tex Live 2019. This Dockerfile download and install the latest Tex Live archive available
 
 # Warning
 This is not a full texlive distribution. This is based on "scheme-medium" profile with the following collections added: 
