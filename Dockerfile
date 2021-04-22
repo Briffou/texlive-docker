@@ -1,8 +1,8 @@
 # Docker for Tex Live
-# current version : Tex Live 2020
+# current version : Tex Live 2021
 FROM phusion/baseimage
 
-LABEL version="16 April 2020"
+LABEL version="22 April 2021"
 
 RUN apt-get update && apt-get install -y ghostscript xz-utils wget bsdtar perl && \
     apt-get clean
