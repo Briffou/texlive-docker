@@ -1,6 +1,6 @@
 # Docker for Tex Live
 # current version : Tex Live 2021
-FROM phusion/baseimage
+FROM phusion/baseimage:master
 
 LABEL version="22 April 2021"
 
