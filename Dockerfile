@@ -4,7 +4,7 @@ FROM phusion/baseimage:master
 
 LABEL version="22 April 2021"
 
-RUN apt-get update && apt-get install -y ghostscript xz-utils wget bsdtar perl && \
+RUN apt-get update && apt-get install -y ghostscript xz-utils wget libarchive-tools perl && \
     apt-get clean
 
 WORKDIR /home/install-tl-unx
